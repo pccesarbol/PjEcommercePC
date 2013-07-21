@@ -8,6 +8,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link href="views/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> <!-- or use local jquery -->
         
         <style type="text/css">
             body{padding-top: 60px;padding-bottom: 40px;}.sidebar-nav{padding: 9px 0;}@media (max-width: 980px){/* Enable use of floated navbar text */ .navbar-text.pull-right{float: none;padding-left: 5px;padding-right: 5px;}}
@@ -15,6 +16,12 @@
         <link href="views/css/bootstrap-responsive.css" rel="stylesheet">
         
         <script src="views/js/bootstrap.min.js"></script>
+        <script src="views/js/jqBootstrapValidation.js"></script>
+        
+        <script>
+            $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+        </script>
+        
     </head>
     
     <body>     
@@ -26,16 +33,18 @@
                 <img src="views/img/cabecalho_ecommerce.png"/>
                 <div class="container-fluid">
                     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button><a class="brand" href="#">Solicitar orçamento</a>
+                    </button><a class="brand" href="#">Área ADM</a>
                     <div class="nav-collapse collapse">
                         <p class="navbar-text pull-right"><a href="#" class="navbar-link"><b>Registra-se</b></a>
                         </p>
                         <ul class="nav">
-                            <li class="active"><a href="#">Acompanhar seu pedido</a>
+                            <li><a href="#">Acompanhar seu pedido</a>                                
                             </li>
-                            <li><a href="#about">Ajuda on-line</a>
+                            <li class="active"><a href="#">Ajuda on-line</a>
                             </li>
-                            <li><a href="#contact">Fale com o desenvolvedor</a>
+                            <li><a href="#about">Fale com o desenvolvedor</a>
+                            </li>
+                            <li><a href="#contact">Solicitar orçamento</a>
                             </li>
                         </ul>
                     </div>
@@ -48,14 +57,22 @@
                     <div class="well sidebar-nav">
                         <ul class="nav nav-list"><br/><br/><br/><br/>
                             <li class="nav-header">Área do Cliente</li>
-                            <li class="active"><a href="#">Entrar</a>
-                            </li>                            
-                            <li class="nav-header">Web Developer</li>
-                            <li><a href="#">Contato</a>
-                            </li>
-                            <li><a href="#">Telefones</a>
-                            </li>                      
-                            <li><a href="#">Login</a>
+                            <li class="active">
+                                <form class="form-horizontal" name="FrmClienteLogin">
+                                    <div class="control-group">
+                                      <label class="control-label" for="inputEmail">Email</label>
+                                      <div class="controls">
+                                        <input type="email" id="inputEmail" placeholder="Email" id="email" required >
+                                      </div>
+                                    </div>
+                                    <div class="control-group">
+                                      <label class="control-label" for="inputPassword">Senha</label>
+                                      <div class="controls">
+                                        <input type="password" id="inputPassword" placeholder="Senha" required>
+                                      </div>
+                                      <button class="btn btn-block btn-primary" type="submit">Gerenciar Conta</button>
+                                    </div>                                    
+                                  </form>
                             </li>  
                         </ul>
                     </div>
