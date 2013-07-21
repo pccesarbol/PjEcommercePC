@@ -69,19 +69,22 @@
                         <div class="span4">
                             <h2>Heading</h2>
                             <p>Bolsa 1.</p>
-                            <p><a class="btn" href="#">View details &raquo;</a>
+                            <p>Valor.</p>
+                            <p><a class="btn-primary" href="#">Comprar &raquo;</a>
                             </p>
                         </div>
                         <div class="span4">
                             <h2>Heading</h2>
                             <p>Bolsa 2.</p>
-                            <p><a class="btn" href="#">View details &raquo;</a>
+                            <p>Valor.</p>
+                            <p><a class="btn-primary" href="#">Comprar &raquo;</a>
                             </p>
                         </div>
                         <div class="span4">
                             <h2>Heading</h2>
                             <p>Bolsa 3.</p>
-                            <p><a class="btn" href="#">View details &raquo;</a>
+                            <p>Valor.</p>
+                            <p><a class="btn-primary" href="#">Comprar &raquo;</a>
                             </p>
                         </div>
                     </div>
@@ -89,19 +92,22 @@
                         <div class="span4">
                             <h2>Heading</h2>
                             <p>Bolsa 4.</p>
-                            <p><a class="btn" href="#">View details &raquo;</a>
+                            <p>Valor.</p>
+                            <p><a class="btn-primary" href="#">Comprar &raquo;</a>
                             </p>
                         </div>
                         <div class="span4">
                             <h2>Heading</h2>
                             <p>Bolsa 5.</p>
-                            <p><a class="btn" href="#">View details &raquo;</a>
+                            <p>Valor.</p>
+                            <p><a class="btn-primary" href="#">Comprar &raquo;</a>
                             </p>
                         </div>
                         <div class="span4">
                             <h2>Heading</h2>
                             <p>Bolsa 6.</p>
-                            <p><a class="btn" href="#">View details &raquo;</a>
+                            <p>Valor.</p>
+                            <p><a class="btn-primary" href="#">Comprar &raquo;</a>
                             </p>
                         </div>
                     </div>
