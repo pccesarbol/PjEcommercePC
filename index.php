@@ -13,10 +13,10 @@
         <style type="text/css">
             body{padding-top: 60px;padding-bottom: 40px;}.sidebar-nav{padding: 9px 0;}@media (max-width: 980px){/* Enable use of floated navbar text */ .navbar-text.pull-right{float: none;padding-left: 5px;padding-right: 5px;}}
         </style>
-        <link href="views/css/bootstrap-responsive.css" rel="stylesheet">
-        
+        <link href="views/css/bootstrap-responsive.css" rel="stylesheet">        
         <script src="views/js/bootstrap.min.js"></script>
         <script src="views/js/jqBootstrapValidation.js"></script>
+        <script src="views/js/AutenticacaoUsuario.js"></script>
         
         <script>
             $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
@@ -26,7 +26,7 @@
     
     <body>     
       <form name="Frm1" action="" method="post"> 
-          
+        <input type="hidden" name="acao" value=""/>  
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
                 <!-- Definindo o cabeçalhop da página -->
@@ -35,7 +35,7 @@
                     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                     </button><a class="brand" href="#">Área ADM</a>
                     <div class="nav-collapse collapse">
-                        <p class="navbar-text pull-right"><a href="#" class="navbar-link"><b>Registra-se</b></a>
+                        <p class="navbar-text pull-right"><a href="javascript:exibirTelaRegistrarUsuario(document.Frm1);" class="navbar-link"><b>Registra-se</b></a>
                         </p>
                         <ul class="nav">
                             <li><a href="#">Acompanhar seu pedido</a>                                
